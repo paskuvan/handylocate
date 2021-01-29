@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css.map" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" integrity="sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=" crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="css/intlTelInput.css">
+        <link rel="stylesheet" href="css/demo.css">
+        <title>Handylocate</title>
+    </head>
+    <body>
+        <div class="bg-image" style="background: #033e6f url(img/world-dots.svg) no-repeat 50% 50%; height: 750px; background-size: cover; width: auto;">
+            <nav class="navbar navbar-expand-lg bg-blue">
+                <a class="navbar-brand bold" href="#"><img src="img/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="#"  class="nav-link">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link mr-3">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link mr-3">Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link mr-3">Login</a>
+                    </li>
+                    <li class="nav-item btn-header">
+                        <button type="button" class="btn btn-primary mr-3  btn-header">Get started</button>
+                    </li>
+                </ul> -->
+            </nav>
+           
+            <div class="container">
+                <div class="mb-5 mt-7">
+                   <div class="heading">Locate any Cell Phone in Seconds</div>
+                   <div class="subline">Track any cell phone worldwide via GPS, GSM and WiFi. No matter which model or cell provider.</div>
+                   
+                   <!--form-->
+                  
+
+                </div>
+            </div>
+
+            <div class="container">
+               <div class="row justify-content-center">
+                <form class="form-group" method="get" action="checkout.html">
+                    <input id="phone" name="phone" type="tel">
+                    <button type="submit" href="#checkout.html" class="btn btn-warning white">LOCATE</button>
+                  </form>
+               </div>
+            </div>
+           
+            
+        </div>
+        <div class="bg-blue">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 pt-1 pb-1">
+                        <p class="white text-center">© 2021 HandyLocate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
+       
+        
+        <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+
+        <script src="js/intlTelInput.js"></script>
+        <script>
+            var input = document.querySelector("#phone");
+            window.intlTelInput(input, {
+            // allowDropdown: false,
+            // autoHideDialCode: false,
+            // autoPlaceholder: "off",
+            // dropdownContainer: document.body,
+            // excludeCountries: ["us"],
+            // formatOnDisplay: false,
+            // geoIpLookup: function(callback) {
+            //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+            //     var countryCode = (resp && resp.country) ? resp.country : "";
+            //     callback(countryCode);
+            //   });
+            // },
+            // hiddenInput: "full_number",
+            // initialCountry: "auto",
+            // localizedCountries: { 'de': 'Deutschland' },
+            // nationalMode: false,
+            // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+            // placeholderNumberType: "MOBILE",
+            // preferredCountries: ['cn', 'jp'],
+            // separateDialCode: true,
+            utilsScript: "js/utils.js",
+            });
+        </script>
+    </body>
+</html>

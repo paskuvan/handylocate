@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css.map" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" integrity="sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=" crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet" />
+        <title>Checkout</title>
+    </head>
+    <body>
+        <div>
+            <!--header-->
+            <nav class="navbar navbar-expand-lg bg-blue">
+                <a class="navbar-brand bold" href="#"><img src="img/logo.png" alt="" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+            <!--body-->
+            <div class="container">
+                <div class="py-5 text-center">
+                    <h2>Start Cell Phone Tracking in 2 simple steps</h2>
+                    
+                   <div class="text-left">
+                    <p class="f-21">All billing plans include:</p>
+                    <ul class="list-unstyled">
+                        <li class="f-17"><span class="oi oi-check"></span> App Tracking (GPS)</li>
+                        <li class="f-17"><span class="oi oi-check"></span> GSM Phone Tracking</li>
+                        <li class="f-17"><span class="oi oi-check"></span> SMS Tracking</li>
+                    </ul>
+                   </div>
+                </div>
+               
+                <div class="row ">
+                    <div class="col-md-4 order-md-2 mb-4">
+                        <div>
+                            <div class="list-group">
+    
+                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                  <div class="d-flex w-100 justify-content-between">
+                                    <h4 class="mb-1">Get Access to:</h4>
+                                    <hr>
+                                  </div>
+                                  <ul class="list-unstyled">
+                                    <li class="f-12"><span class="oi oi-check"></span> UNLIMITED LOCATIONS</li>
+                                    <li class="f-12"><span class="oi oi-check"></span> UNLIMITED DEVICES</li>
+                                    <li class="f-12"><span class="oi oi-check"></span> COMPATIBLE WITH ALL NETWORKS WORLDWIDE</li>
+                                    <li class="f-12"><span class="oi oi-check"></span> COMPATIBLE WITH ANY CELL PHONE</li>
+                                    <li class="f-12"><span class="oi oi-check"></span> 100% ANONYMITY</li>
+                                    <li class="f-12"><span class="oi oi-check"></span> PERSONAL CUSTOMER SUPPORT</li>
+                                </ul>
+                                </a>
+                                
+                              </div>
+                        </div>
+                       
+                       
+                    </div>
+                    <div class="col-md-8  order-md-1">
+                        
+                            <h4 class="mb-3">Payment</h4>
+                            <div class="d-block my-3">
+                                <div class="custom-control custom-radio">
+                                    <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+                                    <label class="custom-control-label" for="credit">Credit card</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                                    <label class="custom-control-label" for="debit">Debit card</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                                    <label class="custom-control-label" for="paypal">PayPal</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="cc-name">Name on card</label>
+                                    <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                                    <small class="text-muted">Full name as displayed on card</small>
+                                    <div class="invalid-feedback"> Name on card is required </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="cc-number">Credit card number</label>
+                                    <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                                    <div class="invalid-feedback"> Credit card number is required </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 mb-3">
+                                    <label for="cc-expiration">Expiration</label>
+                                    <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                                    <div class="invalid-feedback"> Expiration date required </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="cc-cvv">CVV</label>
+                                    <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                                    <div class="invalid-feedback"> Security code required </div>
+                                </div>
+                            </div>
+                            
+                            <button class="btn btn-warning btn-lg btn-block" type="submit">Continue to checkout</button>
+                        </form>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--footer-->
+        <div class="bg-blue mt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 pt-1 pb-1">
+                        <p class="white text-center">© 2021 HandyLocate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    </body>
+</html>
